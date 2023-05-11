@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="ans" class="com.model.Answer">
+ 	 <property name="Ans_id" value="101"></property>
+ 	  <property name="Ans_desc" value="Java is a platform independent language"></property>
+ 	  </bean>
+ 	  
+ 	  <bean id="question" class="com.model.Qustion">
+ 	  <property name="id" value="1"> </property>
+ 	   <property name="Que" value="what is Java?" />
+ 	 
+ 	   
+ 	   <property name="answer">
+ 	   <list>
+ 	      <ref bean="ans"></ref>
+ 	   </list>
+ 	   </property>
+ 	   
+ 	   
+ 	   
+ 	   </bean>
+</beans>
